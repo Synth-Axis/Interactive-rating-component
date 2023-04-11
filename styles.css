@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+body{
+    max-width: 1440px;
+    background-color: hsl(216, 12%, 8%);
+    color:hsl(0, 0%, 100%);
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+}
+
+img, h1, p, ol, input{
+    margin: 0;
+}
+
+h1{
+    font-weight: 700;
+}
+
+ol, li{
+    padding: 0;
+    list-style-type: none;
+}
+
+.main-container{
+    /* margin: 0 auto; */
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background-color: hsl(213, 19%, 18%);
+    padding: 16px 32px;
+    border-radius: 32px;
+    width: 350px;
+    height: 350px;
+    display: flex;
+}
+
+.main-container-mobile{
+    background-color: hsl(213, 19%, 18%);
+    padding: 16px 32px;
+    border-radius: 32px;
+    height: 375px;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.ratingScreen{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.ratingScreen p{
+    color: hsl(216, 12%, 54%);
+}
+
+.ratingScreen img{
+    background-color: hsl(216, 12%, 54%, 0.1);
+    padding: 16px;
+    border-radius: 50%;
+
+}
+.thankYouScreen{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+.thankYouScreen p{
+    padding: 0 0.4rem;
+    text-align: center;
+    color: hsl(216, 12%, 54%);
+    
+}
+
+
+.ratings{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ratingValue{
+    background-color: hsl(216, 12%, 54%, 0.1);
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    color: hsl(216, 12%, 54%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 250ms ease;
+}
+
+.ratingValue:hover{
+    background-color: hsl(216, 12%, 54%);
+    color:hsl(0, 0%, 100%);
+}
+
+.button{
+    width: 100%;
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 64px;
+    padding: 1em;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    transition: all 250ms ease;
+}
+
+.button:hover{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
+
+.rating-clicked{
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.hide{
+    display: none;
+}
+
